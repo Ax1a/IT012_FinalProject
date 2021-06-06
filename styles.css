@@ -1,0 +1,256 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 12rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Navigation styles */
+nav {
+    background: transparent !important;
+    transition: 0.5s ease;
+}
+
+.nav-black {
+    background: #292929 !important;
+}
+
+.nav-link{
+    transition: 0.5s ease;
+}
+
+.navButton {
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    padding: 10px;
+}
+
+/* ------------------ */
+/* Header style */
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.subPage {
+    height: 50vh;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+} 
+
+.under-title {
+    opacity: 1;
+    margin: auto;
+    width: 10rem;
+    border: 3px solid #FAAF3B;
+    border-radius: 10px;
+
+}
+
+#headerTxt {
+    margin-top: 200px;
+}
+
+#exploreBtn {
+    margin-top: 350px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+}
+
+#exploreBtn:hover {
+    background-color: #FAAF3B;
+    border-color: #FAAF3B;
+    color: black;
+}
+
+/* Remove highlight for buttons */
+.btn:focus {
+    box-shadow: none;
+}
+/* ----------------------------------- */
+
+ /* Contents css */ 
+#banner-size{
+    background-image: url('assets/banner1.png');
+    height: 605px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#banner-size2{
+    background-image: url('assets/banner2.png');
+    height: 605px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height: 405px;
+    width:100%;
+    position:absolute;
+}
+
+.btn-warning {
+    color: white;
+    background-color: #F5AF41;
+}
+
+.btn-warning:hover {
+    color: white;
+    background-color: #FFC062;
+}
+
+.onepage-padding {
+    margin-top: 120px;
+    margin-bottom: 170px;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: grey;
+    text-align: center;
+ }
+
+.card-text {
+    font-size: 13px;
+}
+/* --------------------- */
+
+/* Products CSS */
+.prodType {
+    background-color: white;
+    color: #292929;
+    padding: 35px 70px 0 70px;
+    margin-bottom: -.5%;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.prodType2 {
+    background-color: white;
+    color: #292929;
+    padding: 35px 0px 0px 0px;
+    width: 50%;
+    border-radius: 5px 5px 0 0 ;
+    margin: auto auto -1% auto;
+}
+/* --------------------- */
+
+/* About CSS */
+.fndrInfo img{
+    border-radius: 50%;
+}
+
+.fndrInfo p {
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* --------------------- */
+
+/* For mobile and smaller screens */
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://i.ibb.co/BL7jDBr/computer.png') black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    header video {
+        display: none;
+    }
+
+    #headerTxt {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    #exploreBtn {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    #exploreBtn {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 362px) {
+    #exploreBtn {
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .prodType2 {
+        width: 75%;
+    }
+    .prodType {
+        padding: 35px 0px 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .dropdown-menu {display: block;visibility: hidden;opacity:0;transform: translateY(50px);transition:.5s ease all;}
+    .dropdown:hover .dropdown-menu {display: block;visibility: visible;opacity:1;transform: translateY(0px);transition:.5s ease all;}
+    .dropdown .dropdown-menu.show {display: block;visibility: visible;opacity:1;transform: translateY(0px);transition:.5s ease all;}
+}
+/* ----------------------- */

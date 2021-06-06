@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Innovative Technologies</title>
+    <link rel="icon" href="assets/logo_small.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7c485798c5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+       <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container-fluid px-5 py-3">
+          <img src="assets/logo_large.png" alt="logo_large" style="height: 50px;" id="logoLarge">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="products/chassis.html">Chassis</a></li>
+                  <li><a class="dropdown-item" href="products/processor.html">Processor</a></li>
+                  <li><a class="dropdown-item" href="products/motherboard.html">Motherboard</a></li>
+                  <li><a class="dropdown-item" href="products/gpu.html">Graphics Card</a></li>
+                  <li><a class="dropdown-item" href="products/memory.html">Memory</a></li>
+                  <li><a class="dropdown-item" href="products/psu.html">Power Supply</a></li>
+                  <li><a class="dropdown-item" href="products/hdd.html">Hard Drive</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="products/services.html">ITech Services</a></li>
+                </ul>
+              </li>
+              <a class="nav-link px-3" href="about.html">About</a>
+              <a class="nav-link px-3" href="contact.html">Contact Us</a>
+              <a class="px-3"href="#">
+                <img src="assets/cart_white.png" class="navButton" id="cartBlack" alt="">
+              </a>
+              <a class="px-3" href="loginSignup.html">
+                <img src="assets/user_white.png" class="navButton" id="userBlack" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="assets/header_vid.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-left align-items-center">
+            <div class="w-100 text-white" id="headerTxt">
+              <h1 class="display-2 fw-bold">THE RIGHT PARTS</h1>
+              <h1 class="display-3 fw-bold">FOR YOUR <span style="color: #FAAF3B;">PROJECT</span></h1>
+              <p class="lead fs-4 mb-0">ITech is a leading computer retailer in the Philippines.</p>
+              <div class="text-center">
+              <button type="button" onClick="document.getElementById('featured').scrollIntoView();" class="btn btn-outline-light" id="exploreBtn" >Explore</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="my-5" id="featured">
+        <div class="container onepage-padding">
+          <h3 class="text-center">FEATURED PRODUCTS</h3>
+          <hr class="under-title"/>
+          <div class="row">
+            <div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/rtx3080ti.png" class="card-img-top" alt="rtx 3080ti">
+                  <div class="card-body">
+                    <h5 class="card-title">RTX 3080 TI GAMING PRO</h5>
+                    <p class="card-text">Memory Amount 12GB Memory Interface 384bit DRAM Type GDDR6X Graphics Clock 1365 MHz Boost Clock 1665 MHz Memory Clock 19 Gbps CUDA Cores 10240 Memory Bandwidth (GB/sec)</p>
+                    <hr/>
+                    <p class="fw-bold">₱ 123,990.00</p>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/gtx1660s.png" class="card-img-top" alt="rtx 3080ti">
+                  <div class="card-body">
+                    <h5 class="card-title">GTX 1660 SUPER GAMING X </h5>
+                    <p class="card-text">MODEL NAME: GeForce® GTX 1660 SUPER™ GAMING X GRAPHICS PROCESSING UNIT: NVIDIA® GeForce® GTX 1660 SUPER™ INTERFACE: PCI Express x16 3.0 CORES: 1408 Units</p>
+                    <hr/>
+                    <p class="fw-bold">₱ 35,600.00</p>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/ryzen5.png" class="card-img-top" alt="rtx 3080ti">
+                  <div class="card-body">
+                    <h5 class="card-title">AMD RYZEN 5 3600</h5>
+                    <p class="card-text">NOTE: Must be purchased with B450 or higher motherboard. # of CPU Cores: 6 # of Threads: 12 Base Clock: 3.6GHz Max Boost Clock: Up to 4.2GHz Total L1  Cache: 384KB Total L2 Cache: 3MB Total L3 Cache: 32MB</p>
+                    <hr/>
+                    <p class="fw-bold">₱ 10,959.99</p>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/x570.png" class="card-img-top" alt="rtx 3080ti">
+                  <div class="card-body">
+                    <h5 class="card-title">GIGABYTE X570 AORUS PRO </h5>
+                    <p class="card-text">Supports AMD 3rd Gen Ryzen™/ 2nd Gen Ryzen™/ 2nd Gen Ryzen™ with Radeon™ Vega Graphics/ Ryzen™ with Radeon™ Vega Graphics Processors Dual Channel ECC/ Non-ECC Unbuffered DDR4, 4 DIMMs 12+2</p>
+                    <hr/>
+                    <p class="fw-bold">₱ 14,309.99</p>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="banner-size"></div>
+        <div class="container onepage-padding">
+          <h3 class="text-center">NEW ARRIVALS</h3>
+          <hr class="under-title"/>
+          <div class="row">
+            <div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/rx6700xt.png" class="card-img-top" alt="rtx 3080ti">
+                  <div class="card-body">
+                    <h5 class="card-title">ASROCK RX 6700 XT </h5>
+                    <p class="card-text">Clock: GPU / MemoryBoost Clock: Up to 2581 MHz / 16 GbpsGame Clock: Up to 2424 MHz / 16 GbpsBase Clock: 2321 MHz / 16 GbpsKey Specification7nm AMD Radeon™ RX 6700 12GB 192-bit GDDR6</p>
+                    <hr/>
+                    <p class="fw-bold">₱ 50,400.99</p>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/aoc32.png" class="card-img-top" alt="rtx 3080ti">
+                  <div class="card-body">
+                    <h5 class="card-title">AOC CQ32G2E 32" 144HZ</h5>
+                    <p class="card-text">Model Name CQ32G2E Panel 31.5" (VA / 1500R) Pixel Pitch (mm) 0.2724 (H) x 0.2724 (V) Effective Viewing Area (mm) 697.344 (H) x 392.256 (V) Brightness (typical) 250 cd/m² Contrast Ratio 3000 : 1 (Typical) 80 Million : 1</p>
+                    <hr/>
+                    <p class="fw-bold">₱ 18,799.99</p>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/rtx3080ti.png" class="card-img-top" alt="rtx 3080ti">
+                  <div class="card-body">
+                    <h5 class="card-title">RTX 3080 TI GAMING PRO</h5>
+                    <p class="card-text">Memory Amount 12GB Memory Interface 384bit DRAM Type GDDR6X Graphics Clock 1365 MHz Boost Clock 1665 MHz Memory Clock 19 Gbps CUDA Cores 10240 Memory Bandwidth (GB/sec)</p>
+                    <hr/>
+                    <p class="fw-bold">₱ 123,990.00</p>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/aoc165.png" class="card-img-top" alt="rtx 3080ti">
+                  <div class="card-body">
+                    <h5 class="card-title">AOC C32G2E 32" 165HZ</h5>
+                    <p class="card-text">Panel: 31.5" (VA/1500R) Pixel Pitch(mm): 0.36375 (H) x 0.36375(V) Effective Viewing Area (mm): 698.4 (H) x 392.85 (V) Brightness: 250cd/m² Contrast Ratio: 3000:1 typical 80million:1(DCR) Response Time: 1ms</p>
+                    <hr/>
+                    <p class="fw-bold">₱ 19,399.99</p>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="banner-size2"></div>
+        <div class="container" style="margin-top: 120px;margin-bottom: -5%;">
+          <div class="row g-2">
+            <div class="col-md map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.4861545201957!2d121.06087863489844!3d14.625706841704192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb60d80b68cd0b96e!2sTechnological%20Institute%20of%20the%20Philippines%2C%20Quezon%20City%20-%20PE%20Center!5e0!3m2!1sen!2sph!4v1622896749448!5m2!1sen!2sph" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md">
+              <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+              <hr class="under-title" style="margin-top: -15px; margin-bottom: 20px;"/>
+              <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                  a matter of hours to help you.</p>
+                <div class="text-center justify-content-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x" style="color: #F5AF41;"></i>
+                            <p>938 Aurora Blvd, Cubao, Quezon City, 1109 Metro Manila</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x" style="color: #F5AF41;"></i>
+                            <p>07-182-0157</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x" style="color: #F5AF41;"></i>
+                            <p>InnovativeTech@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+		  	<hr>
+		    <p> © 2021 Innovative Technology. All rights reserved. </p>
+		  </div>
+      <script>
+        var banner1 = document.getElementById('banner-size');
+        var banner2 = document.getElementById('banner-size2');
+
+        if (scrnWidth < 768) {
+          banner1.style.display = "none";
+          banner2.style.display = "none";
+        }
+      </script> 
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
