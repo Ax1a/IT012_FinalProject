@@ -191,6 +191,16 @@ header .overlay {
     border-radius: 5px 5px 0 0 ;
     margin: auto auto -1% auto;
 }
+
+#checkOut {
+    padding: 1.5% 40px 1.5% 40px;
+    /* width: 200px;
+    height: 50px; */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
 /* --------------------- */
 
 /* About CSS */
@@ -251,6 +261,9 @@ header .overlay {
     }
     .prodType {
         padding: 35px 0px 0px 0px;
+    }
+    .cartTitle {
+        padding: 35px 0px 0px 15px;
     }
 }
 
