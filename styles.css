@@ -196,6 +196,7 @@ header .overlay {
 /* About CSS */
 .fndrInfo img{
     border-radius: 50%;
+    height: 140px;
 }
 
 .fndrInfo p {
